@@ -1,4 +1,6 @@
 Volutary::Application.routes.draw do
+  match 'pair/:organizer_id/:volunteer_id' => 'organizers#pair'
+
   resources :organizers, except: :edit
 
   resources :volunteers, except: :edit

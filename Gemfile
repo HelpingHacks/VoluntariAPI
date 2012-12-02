@@ -7,7 +7,12 @@ gem 'rails', '3.2.9'
 
 gem 'rails-api'
 
-gem 'sqlite3'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
+
+gem 'pry-rails'
+gem 'factory_girl_rails'
+gem 'awesome_print'
 
 
 # To use ActiveModel has_secure_password

@@ -1,4 +1,12 @@
 Volutary::Application.routes.draw do
+  resources :organizers, except: :edit
+
+  resources :volunteers, except: :edit
+
+  resources :surveys, except: :edit
+
+  resources :miscs, except: :edit
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
